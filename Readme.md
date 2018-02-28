@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Марина Целищева](https://up.htmlacademy.ru/htmlcss/20/user/587145).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nikolamarkelov).
 
 ---
 
