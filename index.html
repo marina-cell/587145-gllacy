@@ -11,27 +11,47 @@
           <img src="img/index-logo.svg" width="50" height="50" alt="Логотип магазина Глэйси">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a>
+            <ul class="catalog-navigation">
+              <li><a href="#">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li class="catalog-navigation-active"><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="#">Поиск</a></li>
-          <li><a href="#">Вход</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li><span class="search-button">Поиск</span></li>
+          <li><span class="login-button">Вход</span></li>
+          <li><span class="cart-button">Корзина</span></li>
         </ul>
       </nav>
       <div class="info">
         <p class="schedule">С 10 до 20, ежедневно</p>
         <p class="phone-number">8 812 450-25-25</p>
       </div>
+      <div class="search-content">
+        <!-- Форма с текстовым окошком
+        <input type="text" value="Что ищем?">
+        -->
+      </div>
+      <div class="login-content">
+        <!-- Форма с текстовыми окошками и кнопкой -->
+        <p class="login-links">
+          <a href="#">Забыли пароль?</a><br>
+          <a href="#">Новая регистрация</a>
+        </p>
+      </div>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
       
-      <section class="slider">
+      <figure class="slider">
         <!-- Здесь будет слайдер -->
-      </section>
+      </figure>
       
       <section class="promos">
         <h2 class="visually-hidden">Предложения</h2>
@@ -39,12 +59,12 @@
           <li class="promo-item">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button">Хочу варенье!</a>
+            <a class="button" href="#">Хочу варенье!</a>
           </li>
           <li class="promo-item">
             <h3>Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="button">Хочу шоколадки!</a>
+            <a class="button" href="#">Хочу шоколадки!</a>
           </li>
         </ul>
       </section>
@@ -125,10 +145,10 @@
         </ul>
       </section>
       
-      <section class="news">
+      <article class="news">
         <h2>Новое в нашем блоге</h2>
         <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
-      </section>
+      </article>
       
       <section class="mailing">
         <h2 class="visually-hidden">Рассылка</h2>
@@ -185,5 +205,11 @@
         <span>Сделано в HTML Academy © 2017</span>
       </p>
     </footer>
+    
+    <section class="modal modal-feedback">
+      <h2>Мы обязательно вам ответим!</h2>
+      <!-- Форма -->
+    </section>
+    
   </body>
 </html>
