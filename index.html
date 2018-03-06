@@ -15,7 +15,7 @@
             <ul class="catalog-navigation">
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
-              <li class="catalog-navigation-active"><a href="#">Щербеты</a></li>
+              <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
@@ -31,7 +31,7 @@
       </nav>
       <div class="info">
         <p class="schedule">С 10 до 20, ежедневно</p>
-        <p class="phone-number">8 812 450-25-25</p>
+        <p class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
       <div class="search-content">
         <!-- Форма с текстовым окошком
@@ -41,7 +41,7 @@
       <div class="login-content">
         <!-- Форма с текстовыми окошками и кнопкой -->
         <p class="login-links">
-          <a href="#">Забыли пароль?</a><br>
+          <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
         </p>
       </div>
@@ -57,14 +57,18 @@
         <h2 class="visually-hidden">Предложения</h2>
         <ul class="promos-list">
           <li class="promo-item">
-            <h3>Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button" href="#">Хочу варенье!</a>
+            <article class="promo promo-raspberry">
+              <h3>Малинка даром!</h3>
+              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="button" href="#">Хочу варенье!</a>
+            </article>
           </li>
           <li class="promo-item">
-            <h3>Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="button" href="#">Хочу шоколадки!</a>
+            <article class="promo promo-chocolate">
+              <h3>Шоколадки даром!</h3>
+              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a class="button" href="#">Хочу шоколадки!</a>
+            </article>
           </li>
         </ul>
       </section>
@@ -73,56 +77,60 @@
         <h2 class="visually-hidden">Хиты продажи</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>
-              <a href="#">
-                <span class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="img/hit-item-1.svg" width="50" height="50" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            </p>
-            <p class="catalog-item-price">
-              <b>310 ₽</b><span class="weight">/кг</span>
-            </p>
+            <article class="product product-1">
+              <h3 class="catalog-item-title">
+                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              </h3>
+              <div class="catalog-item-image">
+                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              </div>
+              <p class="catalog-item-price">
+                <b class="product-price">310 ₽</b><span class="weight">/кг</span>
+              </p>
+              <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
+            </article>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="#">
-                <span>Сливочно-кофейное с кусочками шоколада</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="img/hit-item-2.svg" width="50" height="50" alt="Сливочно-кофейное с кусочками шоколада">
-            </p>
-            <p class="catalog-item-price">
-              <b>380 ₽</b><span class="weight">/кг</span>
-            </p>
+            <article class="product product-2">
+              <h3 class="catalog-item-title">
+                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              </h3>
+              <div class="catalog-item-image">
+                <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              </div>
+              <p class="catalog-item-price">
+                <b class="product-price">380 ₽</b><span class="weight">/кг</span>
+              </p>
+              <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
+            </article>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="#">
-                <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="img/hit-item-3.svg" width="50" height="50" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            </p>
-            <p class="catalog-item-price">
-              <b>355 ₽</b><span class="weight">/кг</span>
-            </p>
+            <article class="product product-3">
+              <h3 class="catalog-item-title">
+                <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              </h3>
+              <div class="catalog-item-image">
+                <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              </div>
+              <p class="catalog-item-price">
+                <b class="product-price">355 ₽</b><span class="weight">/кг</span>
+              </p>
+              <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
+            </article>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="#">
-                <span>Сливочное крем-брюле с карамельной подливкой</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <img src="img/hit-item-4.svg" width="50" height="50" alt="Сливочное крем-брюле с карамельной подливкой">
-            </p>
-            <p class="catalog-item-price">
-              <b>415 ₽</b><span class="weight">/кг</span>
-            </p>
+            <article class="product product-4">
+              <h3 class="catalog-item-title">
+                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              </h3>
+              <div class="catalog-item-image">
+                <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              </div>
+              <p class="catalog-item-price">
+                <b class="product-price">415 ₽</b><span class="weight">/кг</span>
+              </p>
+              <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
+            </article>
           </li>
         </ul>
       </section>
@@ -160,16 +168,11 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <img src="img/map.png" width="1200" height="200" alt="Наше расположение на карте: ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div class="contacts">
-          <p>
-            <span class="contacts-title">Адрес главного офиса и офлайн-магазина</span><br>
-            <span class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-            <br>
-            <span class="contacts-title">Для заказов по телефону:</span>
-            <br>
-            <span class="contacts-phone">8 812 450-25-25</span>
-            <br>
-            <span class="contacts-schedule">(с 10 до 20 ежедневно)</span>
-          </p>
+          <p class="contacts-title">Адрес главного офиса<br>и офлайн-магазина</p>
+          <p class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="contacts-title">Для заказов по телефону:</p>
+          <p class="contacts-phone"><a href="tel:+78124502525">8 812 450-25-25</a></p>
+          <p class="contacts-schedule">(с 10 до 20 ежедневно)</p>
           <a class="button" href="#">Форма обратной связи</a>
         </div>
       </section>
@@ -199,11 +202,12 @@
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
-      <p class="copyright">
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-        <br>
-        <span>Сделано в HTML Academy © 2017</span>
-      </p>
+      <div class="copyright">
+        <a href="https://htmlacademy.ru">
+          <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="HTML Academy">
+        </a>
+        <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+      </div>
     </footer>
     
     <section class="modal modal-feedback">
