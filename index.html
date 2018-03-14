@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body style="background-color: #849d8f;">
+  <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -50,21 +50,34 @@
       <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
       
       <div class="slider">
-        <div class="slide slide-1">
-          <p>Крем-брюле и пломбир с малиновым джемом</p>
-          <img src="img/slide-1.png" width="1045" height="881" alt="">
-        </div>
-<!--
-        <div class="slide slide-2">
-          <p>Шоколадный пломбир и лимонный сорбет</p>
-          <img src="img/slide-2.png" width="1065" height="859" alt="">
-        </div>
-        <div class="slide slide-3">
-          <p>Пломбир с помадкой и клубничный щербет</p>
-          <img src="img/slide-3.png" width="1079" height="854" alt="">
-        </div>
--->
-        <a class="button" href="#">Давайте оба!</a>
+        <ul class="slider-list">
+		  <li class="slider-item">
+			<p>Крем-брюле и пломбир с малиновым джемом</p>
+			<img src="img/slide-1.png" width="1045" height="881" alt="">
+			<a class="button" href="#">Давайте оба!</a>
+		  </li>
+		  <li class="slider-item">
+			<p>Шоколадный пломбир и лимонный сорбет</p>
+			<img src="img/slide-2.png" width="1065" height="859" alt="">
+			<a class="button" href="#">Давайте оба!</a>
+		  </li>
+		  <li class="slider-item">
+			<p>Пломбир с помадкой и клубничный щербет</p>
+            <img src="img/slide-3.png" width="1079" height="854" alt="">
+			<a class="button" href="#">Давайте оба!</a>
+		  </li>
+        </ul>
+		<ul class="slider-switch">
+			<li class="slide-radio">
+				<button class="slide-btn" type="button">Первый слайд</button>
+			</li>
+			<li class="slide-radio">
+				<button class="slide-btn" type="button">Второй слайд</button>
+			</li>
+			<li class="slide-radio">
+				<button class="slide-btn" type="button">Третий слайд</button>
+			</li>
+		</ul>
       </div>
       
       <section class="promos">
@@ -91,58 +104,50 @@
         <h2 class="visually-hidden">Хиты продажи</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <article class="product product-1">
-              <h3 class="catalog-item-title">
-                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              </h3>
+            <article class="product">
               <div class="catalog-item-image">
                 <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              </div>
-              <p class="catalog-item-price">
-                <b class="product-price">310 ₽</b><span class="weight">/кг</span>
-              </p>
+                <p class="catalog-item-price">
+                  <b class="product-price">310 ₽</b><span class="weight">/кг</span>
+                </p>
+			  </div>
+              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
             </article>
           </li>
           <li class="catalog-item">
-            <article class="product product-2">
-              <h3 class="catalog-item-title">
-                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-              </h3>
+            <article class="product">
               <div class="catalog-item-image">
                 <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                <p class="catalog-item-price">
+                  <b class="product-price">380 ₽</b><span class="weight">/кг</span>
+                </p>
               </div>
-              <p class="catalog-item-price">
-                <b class="product-price">380 ₽</b><span class="weight">/кг</span>
-              </p>
+              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
             </article>
           </li>
           <li class="catalog-item">
-            <article class="product product-3">
-              <h3 class="catalog-item-title">
-                <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-              </h3>
+            <article class="product">
               <div class="catalog-item-image">
                 <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <p class="catalog-item-price">
+                  <b class="product-price">355 ₽</b><span class="weight">/кг</span>
+                </p>
               </div>
-              <p class="catalog-item-price">
-                <b class="product-price">355 ₽</b><span class="weight">/кг</span>
-              </p>
+              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
             </article>
           </li>
           <li class="catalog-item">
-            <article class="product product-4">
-              <h3 class="catalog-item-title">
-                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-              </h3>
+            <article class="product">
               <div class="catalog-item-image">
                 <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                <p class="catalog-item-price">
+                  <b class="product-price">415 ₽</b><span class="weight">/кг</span>
+                </p>
               </div>
-              <p class="catalog-item-price">
-                <b class="product-price">415 ₽</b><span class="weight">/кг</span>
-              </p>
+              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
               <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -228,6 +233,5 @@
       <h2>Мы обязательно вам ответим!</h2>
       <!-- Форма -->
     </section>
-    
   </body>
 </html>
