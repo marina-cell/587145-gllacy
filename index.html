@@ -11,7 +11,7 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a>
+          <li><a href="#">Каталог</a>
             <ul class="catalog-navigation">
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -24,9 +24,9 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><span class="search-button">Поиск</span></li>
-          <li><span class="login-button">Вход</span></li>
-          <li><span class="cart-button">Корзина</span></li>
+          <li><a class="search-button" href="#">Поиск</a></li>
+          <li><a class="login-button" href="#">Вход</a></li>
+          <li><a class="cart-button" href="#">Корзина</a></li>
         </ul>
       </nav>
       <div class="info">
@@ -34,12 +34,23 @@
         <p class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
       <div class="search-content">
-        <!-- Форма с текстовым окошком
-        <input type="text" value="Что ищем?">
-        -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input id="search" type="search" name="search" placeholder="Что ищем?">
+        </form>
       </div>
       <div class="login-content">
-        <!-- Форма с текстовыми окошками и кнопкой -->
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="login-email">Электронная почта</label>
+            <input id="login-email" type="email" name="login" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="login-password">Пароль</label>
+            <input id="login-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <button class="button" type="submit">Войти</button>
+        </form>
         <p class="login-links">
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
@@ -185,22 +196,26 @@
         <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
       </article>
       
-      <section class="mailing">
+      <section class="subscribe">
         <h2 class="visually-hidden">Рассылка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <!-- Здесь будет форма -->
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="subscribe-email">Электронная почта для рассылки</label>
+            <input id="subscribe-email" type="email" name="subscribe-email" placeholder="Электронная почта">
+            <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
       
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
         <img src="img/map.png" width="1200" height="430" alt="Наше расположение на карте: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <div class="contacts">
-          <p class="contacts-title">Адрес главного офиса<br>и офлайн-магазина</p>
-          <p class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-          <p class="contacts-title">Для заказов по телефону:</p>
-          <p class="contacts-phone"><a href="tel:+78124502525">8 812 450-25-25</a></p>
-          <p class="contacts-schedule">(с 10 до 20 ежедневно)</p>
-          <a class="button" href="#">Форма обратной связи</a>
+        <div class="contacts">		  
+          <span>Адрес главного офиса<br>и офлайн-магазина</span>
+          <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          <span>Для заказов по телефону:</span>
+          <span><a href="tel:+78124502525">8 812 450-25-25</a></span>
+		  <span>(с 10 до 20 ежедневно)</span>
+		  <button class="button" type="button">Форма обратной связи</button>
         </div>
       </section>
     </main>
@@ -231,7 +246,7 @@
       </div>
       <div class="copyright">
         <a href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
       </div>
@@ -239,7 +254,21 @@
     
     <section class="modal modal-feedback">
       <h2>Мы обязательно вам ответим!</h2>
-      <!-- Форма -->
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="feedback-username">Ваше имя</label>
+          <input id="feedback-username" type="text" name="username" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
+          <input id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-message">Ваше сообщение</label>
+          <textarea id="feedback-message" name="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
   </body>
 </html>

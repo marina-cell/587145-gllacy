@@ -11,10 +11,10 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
         </a>
         <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a>
+          <li class="site-navigation-current"><a href="#">Каталог</a>
             <ul class="catalog-navigation">
               <li><a href="#">Новинки</a></li>
-              <li><a class="catalog-navigation-active" href="catalog.html">Сливочное</a></li>
+              <li><a class="catalog-navigation-current">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
@@ -24,9 +24,9 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><span class="search-button">Поиск</span></li>
-          <li><span class="login-button">Вход</span></li>
-          <li><span class="cart-button">Корзина</span></li>
+          <li><a class="search-button" href="#">Поиск</a></li>
+          <li><a class="login-button" href="#">Вход</a></li>
+          <li><a class="cart-button" href="#">Корзина</a></li>
         </ul>
       </nav>
       <div class="info">
@@ -34,12 +34,23 @@
         <p class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
       <div class="search-content">
-        <!-- Форма с текстовым окошком
-        <input type="text" value="Что ищем?">
-        -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input id="search" type="search" name="search" placeholder="Что ищем?">
+        </form>
       </div>
       <div class="login-content">
-        <!-- Форма с текстовыми окошками и кнопкой -->
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="login-email">Электронная почта</label>
+            <input id="login-email" type="email" name="login" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="login-password">Пароль</label>
+            <input id="login-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <button class="button" type="submit">Войти</button>
+        </form>
         <p class="login-links">
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
@@ -49,7 +60,7 @@
         <table class="cart-table">
           <tr class="cart-table-item">
             <td>
-              <button class="cart-close-button" type="submit">x</button>
+              <a class="cart-close-button" href="#">Удалить из корзины</a>
             </td>
             <td>Пломбир с апельсиновым джемом</td>
             <td>1,5 кг x <span>200 руб.</span></td>
@@ -57,7 +68,7 @@
           </tr>
           <tr class="cart-table-item">
             <td>
-              <button class="cart-close-button" type="submit">x</button>
+              <a class="cart-close-button" href="#">Удалить из корзины</a>
             </td>
             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
             <td>1,5 кг x <span>300 руб.</span></td>
@@ -79,7 +90,37 @@
       
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-sorting">
+            <legend>Сортировка:</legend>
+            <select name="filter-sorting">
+              <option value="popularity">по популярности</option>
+              <option value="cheap-first">сначала недорогие</option>
+              <option value="expensive-first">сначала дорогие</option>
+              <option value="fat-content">по жирности</option>
+		    </select>
+          </fieldset>
+          <fieldset class="filter-price">
+            <legend>Цена: 100 руб. - 500 руб.</legend>
+<!--            Здесь будет что-то хитрое на div'ах, т.к. два ползунка-->
+          </fieldset>
+          <fieldset class="filter-fat-content">
+            <legend>Жирность:</legend>
+            <label><input type="radio" name="filter-fat-content" value="0"> 0% </label>
+            <label><input type="radio" name="filter-fat-content" value="less-10" checked> до 10% </label>
+            <label><input type="radio" name="filter-fat-content" value="less-30"> до 30% </label>
+            <label><input type="radio" name="filter-fat-content" value="more-30"> выше 30% </label>
+          </fieldset>
+          <fieldset class="filter-filling">
+            <legend>Наполнители:</legend>
+            <label><input type="checkbox" name="choco-filling" checked>шоколадные</label>
+            <label><input type="checkbox" name="sugar-filling" checked>сахарные присыпки</label>
+            <label><input type="checkbox" name="fruit-filling" >фрукты</label>
+            <label><input type="checkbox" name="syrup-filling">сиропы</label>
+            <label><input type="checkbox" name="jam-filling" >джемы</label>
+          </fieldset>
+          <button class="button filter-button" type="submit">Применить</button>
+        </form>
       </section>
       
       <section class="catalog">
@@ -254,18 +295,22 @@
             </article>
           </li>
         </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">5</a></li>
-        </ul>
       </section>
+	  
+	  <section class="pagination">
+		<h2 class="visually-hidden">Пагинация</h2>
+		<ol class="pagination-list">
+		  <li class="pagination-item pagination-item-current"><a>1</a></li>
+		  <li class="pagination-item"><a href="#">2</a></li>
+		  <li class="pagination-item"><a href="#">3</a></li>
+		  <li class="pagination-item"><a href="#">4</a></li>
+		  <li class="pagination-item"><a href="#">5</a></li>
+		</ol>
+	  </section>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <ul class="social">
+        <ul>
           <li>
             <a class="social-button" href="#">Твиттер</a>
           </li>
@@ -281,14 +326,14 @@
         </ul>
       </div>
       <div class="footer-docs">
-        <ul class="docs">
+        <ul>
           <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
-      <div class="copyright">
+      <div class="footer-copyright">
         <a href="https://htmlacademy.ru">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
