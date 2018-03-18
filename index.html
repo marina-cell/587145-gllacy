@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -26,20 +29,20 @@
         <ul class="user-navigation">
           <li><a class="search-button" href="#">Поиск</a></li>
           <li><a class="login-button" href="#">Вход</a></li>
-          <li><a class="cart-button" href="#">Корзина</a></li>
+          <li><a class="cart-button empty-cart" href="#">Пусто</a></li>
         </ul>
       </nav>
       <div class="info">
         <p class="schedule">С 10 до 20, ежедневно</p>
         <p class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
-      <div class="search-content">
+      <div class="modal search-content">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
           <input id="search" type="search" name="search" placeholder="Что ищем?">
         </form>
       </div>
-      <div class="login-content">
+      <div class="modal login-content">
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually-hidden" for="login-email">Электронная почта</label>
@@ -75,18 +78,18 @@
           <li class="slider-item">
             <p>Пломбир с помадкой и клубничный щербет</p>
             <img src="img/slide-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
-            <a class="button" href="#">Давайте оба!</a>
+            <a class="button slider-button" href="#">Давайте оба!</a>
           </li>
         </ul>
         <ul class="slider-switch">
           <li class="slide-radio">
-            <button class="slide-btn" type="button">Первый слайд</button>
+            <button class="switch-button" type="button">Первый слайд</button>
           </li>
           <li class="slide-radio">
-            <button class="slide-btn" type="button">Второй слайд</button>
+            <button class="switch-button" type="button">Второй слайд</button>
           </li>
           <li class="slide-radio">
-            <button class="slide-btn" type="button">Третий слайд</button>
+            <button class="switch-button" type="button">Третий слайд</button>
           </li>
         </ul>
       </div>
@@ -221,7 +224,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <ul class="social">
+        <ul class="social-list">
           <li>
             <a class="social-button" href="#">Твиттер</a>
           </li>
@@ -237,7 +240,7 @@
         </ul>
       </div>
       <div class="footer-docs">
-        <ul class="docs">
+        <ul class="docs-list">
           <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
@@ -248,7 +251,7 @@
         <a href="https://htmlacademy.ru">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
-        <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+        <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
       </div>
     </footer>
     
