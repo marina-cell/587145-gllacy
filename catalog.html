@@ -36,13 +36,13 @@
         <p class="schedule">С 10 до 20, ежедневно</p>
         <p class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
-      <div class="search-content">
+      <div class="modal search-content">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
           <input id="search" type="search" name="search" placeholder="Что ищем?">
         </form>
       </div>
-      <div class="login-content">
+      <div class="modal login-content">
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually-hidden" for="login-email">Электронная почта</label>
@@ -66,7 +66,7 @@
               <a class="cart-close-button" href="#">Удалить из корзины</a>
             </td>
             <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг x <span>200 руб.</span></td>
+            <td>1,5 кг x <span class="price-for-item">200 руб.</span></td>
             <td>300 руб.</td>
           </tr>
           <tr class="cart-table-item">
@@ -74,7 +74,7 @@
               <a class="cart-close-button" href="#">Удалить из корзины</a>
             </td>
             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг x <span>300 руб.</span></td>
+            <td>1,5 кг x <span class="price-for-item">300 руб.</span></td>
             <td>450 руб.</td>
           </tr>
         </table>
@@ -122,7 +122,7 @@
             <label><input type="checkbox" name="syrup-filling">сиропы</label>
             <label><input type="checkbox" name="jam-filling" >джемы</label>
           </fieldset>
-          <button class="button filter-button" type="submit">Применить</button>
+          <button class="filter-button" type="submit">Применить</button>
         </form>
       </section>
       
@@ -313,7 +313,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <ul>
+        <ul class="social-list">
           <li>
             <a class="social-button" href="#">Твиттер</a>
           </li>
@@ -329,7 +329,7 @@
         </ul>
       </div>
       <div class="footer-docs">
-        <ul>
+        <ul class="docs-list">
           <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
