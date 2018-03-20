@@ -201,6 +201,9 @@ a {
 }
 
 .catalog-item-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
   text-align: center;
   text-decoration: underline;
 }
@@ -246,8 +249,8 @@ a {
 }
 
 .news {
-  background-color: #ffffff;
   color: #323232;
+  background-color: #ffffff;
 }
 
 .news h2 {
@@ -258,6 +261,9 @@ a {
 
 .news a {
   color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
 }
 
 .news a:hover,
@@ -266,22 +272,17 @@ a {
   color: #e84d37;
 }
 
-.news p {
-  font-size: 24px;
-  line-height: 30px;
-  text-decoration: underline;
-}
-
 .subscribe {
-  background-color: #f8f7f4;
   color: #5a5a5a;
+  background-color: #f8f7f4;
+  font-weight: 400;
 }
 
 .contacts {
-  font-style: normal;
   color: #323232;
   background-color: rgba(255, 255, 255, 0.98);
   border-radius: 15px;
+  font-style: normal;
 }
 
 .contacts span {
@@ -313,7 +314,7 @@ a {
 .contacts-schedule {
   font-size: 14px;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .social-list,
@@ -324,7 +325,7 @@ a {
 
 .footer-docs {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: 400;
   text-decoration: underline;
 }
@@ -339,9 +340,9 @@ a {
   color: #ffbc9e;
 }
 
-.copyright {
+.footer-copyright {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: 400;
 }
 
@@ -435,6 +436,10 @@ a {
 
 .filter-button {
   color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  
   border-radius: 13px;
   border: 2px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -450,6 +455,12 @@ a {
   background-color: #eaeaea;
   border: none;
   box-shadow: inset 0px 2px 1px 0px #696969;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .pagination-item-current {
@@ -470,4 +481,10 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   width: 25px;
   height: 25px;
+}
+
+.container h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
 }
