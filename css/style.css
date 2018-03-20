@@ -29,7 +29,7 @@ a {
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0 2px 2px 0px rgba(172, 16, 0, 0.64);
   border: none;
-  border-radius: 30px;
+  border-radius: 22px;
 }
 
 .button:hover,
@@ -44,6 +44,14 @@ a {
   background-color: #ec6f5e;
   background-image: linear-gradient(to bottom, #e74a35, #f26843);
   box-shadow: inset 0 2px 2px 0px #942718;
+}
+
+.login-form-button {
+  border-radius: 21px;
+}
+
+.promo-button {
+  border-radius: 23px;
 }
 
 .site-navigation,
@@ -170,6 +178,7 @@ a {
 .slider-button {
   font-size: 32px;
   line-height: 44px;
+  border-radius: 30px;
   
   display: inline-block; /* Вынести выше? */
 }
@@ -183,6 +192,11 @@ a {
   line-height: 41px;
 }
 
+.promo {
+  border-radius: 15px;
+  width: 560px;
+}
+
 .promo p {
   font-size: 18px;
   line-height: 22px;
@@ -192,16 +206,12 @@ a {
   background-color: #ae1b39;
   background-image: url("../img/promo-raspberry.jpg");
   background-repeat: no-repeat;
-  border-radius: 15px;
-  width: 560px;
 }
 
 .promo-chocolate {
   background-color: #563627;
   background-image: url("../img/promo-chocolate.jpg");
   background-repeat: no-repeat;
-  border-radius: 15px;
-  width: 560px;
 }
 
 .catalog-list {
@@ -293,7 +303,6 @@ a {
   background-repeat: no-repeat;
   width: 560px;
   border-radius: 15px;
-  margin: 6px;
 }
 
 .subscribe {
@@ -302,14 +311,13 @@ a {
   font-weight: 400;
   width: 548px;
   border-radius: 15px;
-  
 }
 
 .contacts {
   color: #323232;
+  font-style: normal;
   background-color: rgba(255, 255, 255, 0.98);
   border-radius: 15px;
-  font-style: normal;
 }
 
 .contacts span {
@@ -450,7 +458,7 @@ a {
   
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  border-radius: 18px;
+  border-radius: 16px;
 }
 
 .filter-form legend {
@@ -467,7 +475,7 @@ a {
   line-height: 18px;
   font-weight: 500;
   
-  border-radius: 13px;
+  border-radius: 16px;
   border: 2px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
 }
