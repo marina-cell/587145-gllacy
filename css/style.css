@@ -190,10 +190,18 @@ a {
 
 .promo-raspberry {
   background-color: #ae1b39;
+  background-image: url("../img/promo-raspberry.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  width: 560px;
 }
 
 .promo-chocolate {
   background-color: #563627;
+  background-image: url("../img/promo-chocolate.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  width: 560px;
 }
 
 .catalog-list {
@@ -228,8 +236,10 @@ a {
 }
 
 .features {
-  background-color: #e8d9bb;
   color: #323232;
+  background-color: #e8d9bb;
+  background-image: url("../img/waffle.jpg");
+  border-radius: 15px;
 }
 
 .features-list {
@@ -251,6 +261,11 @@ a {
 .news {
   color: #323232;
   background-color: #ffffff;
+  background-image: url("../img/fruit-sorbet.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  width: 560px;
+  min-height: 220px;
 }
 
 .news h2 {
@@ -272,10 +287,22 @@ a {
   color: #e84d37;
 }
 
+.subscribe-wrapper {
+  background-color: #f8f7f4;
+  background-image: url("../img/bg-post.svg");
+  background-repeat: no-repeat;
+  width: 560px;
+  border-radius: 15px;
+  margin: 6px;
+}
+
 .subscribe {
   color: #5a5a5a;
   background-color: #f8f7f4;
   font-weight: 400;
+  width: 548px;
+  border-radius: 15px;
+  
 }
 
 .contacts {
