@@ -9,88 +9,92 @@
   </head>
   <body class="inner-page">
     <header class="main-header">
-      <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="#">Каталог</a>
-            <ul class="catalog-navigation">
-              <li><a href="#">Новинки</a></li>
-              <li><a class="catalog-navigation-current">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a class="search-button" href="#">Поиск</a></li>
-          <li><a class="login-button" href="#">Вход</a></li>
-          <li><a class="cart-button full-cart" href="#">2 товара</a></li>
-        </ul>
-      </nav>
-      <div class="info">
-        <p class="schedule">С 10 до 20, ежедневно</p>
-        <p class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
-      </div>
-      <div class="modal search-content">
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input id="search" type="search" name="search" placeholder="Что ищем?">
-        </form>
-      </div>
-      <div class="modal login-content">
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="login-email">Электронная почта</label>
-            <input id="login-email" type="email" name="login" placeholder="Электронная почта">
+      <div class="container">
+        <nav class="main-navigation">
+          <a href="index.html" class="main-header-logo">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation-current"><a href="#">Каталог</a>
+              <ul class="catalog-navigation">
+                <li><a href="#">Новинки</a></li>
+                <li><a class="catalog-navigation-current">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li><a class="search-button" href="#">Поиск</a></li>
+            <li><a class="login-button" href="#">Вход</a></li>
+            <li><a class="cart-button full-cart" href="#">2 товара</a></li>
+          </ul>
+        </nav>
+        <div class="row">
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs-current">Сливочное</li>
+          </ul>
+          <div class="info">
+            <p class="schedule">С 10 до 20, ежедневно</p>
+            <p class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
+          </div>
+        </div>
+        <div class="modal search-content">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input id="search" type="search" name="search" placeholder="Что ищем?">
+          </form>
+        </div>
+        <div class="modal login-content">
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input id="login-email" type="email" name="login" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input id="login-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <button class="button" type="submit">Войти</button>
+          </form>
+          <p class="login-links">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
           </p>
-          <p>
-            <label class="visually-hidden" for="login-password">Пароль</label>
-            <input id="login-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <button class="button" type="submit">Войти</button>
-        </form>
-        <p class="login-links">
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </p>
-      </div>
-      <div class="cart-content">
-        <table class="cart-table">
-          <tr class="cart-table-item">
-            <td>
-              <a class="cart-close-button" href="#">Удалить из корзины</a>
-            </td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг x <span class="price-for-item">200 руб.</span></td>
-            <td>300 руб.</td>
-          </tr>
-          <tr class="cart-table-item">
-            <td>
-              <a class="cart-close-button" href="#">Удалить из корзины</a>
-            </td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг x <span class="price-for-item">300 руб.</span></td>
-            <td>450 руб.</td>
-          </tr>
-        </table>
-        <hr>
-        <b>Итого: 750 руб.</b>
-        <a class="button cart-content-button" href="#">Оформить заказ</a>
+        </div>
+        <div class="cart-content">
+          <table class="cart-table">
+            <tr class="cart-table-item">
+              <td>
+                <a class="cart-close-button" href="#">Удалить из корзины</a>
+              </td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг x <span class="price-for-item">200 руб.</span></td>
+              <td>300 руб.</td>
+            </tr>
+            <tr class="cart-table-item">
+              <td>
+                <a class="cart-close-button" href="#">Удалить из корзины</a>
+              </td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг x <span class="price-for-item">300 руб.</span></td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <hr>
+          <b>Итого: 750 руб.</b>
+          <a class="button cart-content-button" href="#">Оформить заказ</a>
+        </div>
       </div>
     </header>
     <main class="container">
       <h1>Сливочное мороженое</h1>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-current">Сливочное</li>
-      </ul>
-      
+            
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -312,35 +316,37 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-social">
-        <ul class="social-list">
-          <li>
-            <a class="social-button" href="#">Твиттер</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Инстаграм</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Вконтакте</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-docs">
-        <ul class="docs-list">
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <a href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-        </a>
-        <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+      <div class="container">
+        <div class="footer-social">
+          <ul class="social-list">
+            <li>
+              <a class="social-button" href="#">Твиттер</a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Инстаграм</a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Вконтакте</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-docs">
+          <ul class="docs-list">
+            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="#">О производстве</a></li>
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+          </a>
+          <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+        </div>
       </div>
     </footer>  
   </body>
