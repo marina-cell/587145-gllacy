@@ -32,7 +32,7 @@
               
               <li><a class="login-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход</a></li>
               
-              <li><a class="cart-button" href="#">Пусто</a></li>
+              <li><a class="cart-button full-cart" href="#">2 товара</a></li>
             </ul>
         </nav>
         <div class="row">
@@ -111,22 +111,59 @@
           </fieldset>
           <fieldset class="filter-price">
             <legend>Цена: 100 руб. - 500 руб.</legend>
-<!--            Здесь будет что-то хитрое на div'ах, т.к. два ползунка-->
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
           </fieldset>
           <fieldset class="filter-fat-content">
             <legend>Жирность:</legend>
-            <label><input type="radio" name="filter-fat-content" value="0"> 0% </label>
-            <label><input type="radio" name="filter-fat-content" value="less-10" checked> до 10% </label>
-            <label><input type="radio" name="filter-fat-content" value="less-30"> до 30% </label>
-            <label><input type="radio" name="filter-fat-content" value="more-30"> выше 30% </label>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fat-content" id="fat-content-0" value="0">
+                <label for="fat-content-0">0%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fat-content" id="fat-content-less-10" value="less-10" checked>
+                <label for="fat-content-less-10">до 10%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fat-content" id="fat-content-less-30" value="less-30">
+                <label for="fat-content-less-30">до 30%</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fat-content" id="fat-content-more-30" value="more-30">
+                <label for="fat-content-more-30">выше 30%</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter-filling">
             <legend>Наполнители:</legend>
-            <label><input type="checkbox" name="choco-filling" checked>шоколадные</label>
-            <label><input type="checkbox" name="sugar-filling" checked>сахарные присыпки</label>
-            <label><input type="checkbox" name="fruit-filling" >фрукты</label>
-            <label><input type="checkbox" name="syrup-filling">сиропы</label>
-            <label><input type="checkbox" name="jam-filling" >джемы</label>
+            <ul>
+              <li class="filter-checkbox">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="choco-filling" id="choco-filling" checked>
+                <label for="choco-filling">шоколадные</label>
+              </li>
+              <li class="filter-checkbox">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-filling" id="sugar-filling" checked>
+                <label for="sugar-filling">сахарные присыпки</label>
+              </li>
+              <li class="filter-checkbox">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit-filling" id="fruit-filling">
+                <label for="fruit-filling">фрукты</label>
+              </li>
+              <li class="filter-checkbox">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup-filling" id="syrup-filling">
+                <label for="syrup-filling">сиропы</label>
+              </li>
+              <li class="filter-checkbox">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam-filling" id="jam-filling">
+                <label for="jam-filling">джемы</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="filter-button" type="submit">Применить</button>
         </form>
@@ -322,25 +359,25 @@
         <div class="footer-social">
           <ul class="social-list">
             <li>
-              <a class="social-button" href="#">Твиттер</a>
+              <a class="social-button twitter-btn" href="#"><span class="visually-hidden">Твиттер</span></a>
             </li>
             <li>
-              <a class="social-button" href="#">Инстаграм</a>
+              <a class="social-button instagram-btn" href="#"><span class="visually-hidden">Инстаграм</span></a>
             </li>
             <li>
-              <a class="social-button" href="#">Фейсбук</a>
+              <a class="social-button fb-btn" href="#"><span class="visually-hidden">Фейсбук</span></a>
             </li>
             <li>
-              <a class="social-button" href="#">Вконтакте</a>
+              <a class="social-button vk-btn" href="#"><span class="visually-hidden">Вконтакте</span></a>
             </li>
           </ul>
         </div>
         <div class="footer-docs">
           <ul class="docs-list">
-            <li><a href="#">Для поставщиков</a></li>
-            <li><a href="#">О производстве</a></li>
-            <li><a href="#">Наши документы</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
+            <li class="docs-item"><a href="#">Для поставщиков</a></li>
+            <li class="docs-item"><a href="#">Наши документы</a></li>
+            <li class="docs-item"><a href="#">О производстве</a></li>
+            <li class="docs-item"><a href="#">Экологические стандарты</a></li>
           </ul>
         </div>
         <div class="footer-copyright">
@@ -350,6 +387,6 @@
           <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
         </div>
       </div>
-    </footer>  
+    </footer>
   </body>
 </html>
