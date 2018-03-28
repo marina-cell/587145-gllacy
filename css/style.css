@@ -89,6 +89,9 @@ input[type="radio"].visually-hidden {
 
 .login-form-button {
   border-radius: 21px;
+  padding: 10px 25px;
+  float: left;
+  margin-right: 20px;
 }
 
 .main-navigation {
@@ -945,6 +948,63 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.modal-login {
+  position: relative;
+}
+
+.modal-login:hover .login-content {
+  display: block;
+  
+  box-sizing: border-box;
+  width: 277px;
+  padding: 18px;
+}
+
+.login-content {  
+  position: absolute;
+  top: 36px;
+  right: 0px;
+}
+
+.login-form p {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;  
+}
+
+.login-form input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.modal-search {
+  position: relative;
+}
+
+.modal-search:hover .search-content {
+/*.search-content {*/
+  display: block;
+  
+  box-sizing: border-box;
+  width: 341px;
+  padding: 18px 15px;
+}
+
+.search-content {  
+  position: absolute;
+  top: 36px;
+  right: 0px;
+}
+
+.search-form input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 10px 14px;
+}
+
 .modal h2 {
   font-size: 24px;
   line-height: 28px;
@@ -979,7 +1039,13 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+.login-links {
+  margin: 0;
+  padding: 0;
+}
+
 .login-links a {
+  display: inline-block;
   color: #323232;
     
   font-size: 13px;
@@ -992,6 +1058,65 @@ input[type="radio"].visually-hidden {
 .login-links a:focus,
 .login-links a:active {
   color: #e84d37;
+}
+
+.modal-feedback {
+/*  display: block;*/   /* На js будем делать */
+  
+  box-sizing: border-box;
+  width: 478px;
+  padding: 15px 25px 25px 23px;
+  
+  position: fixed;
+  top: 80px;
+  left: 360px;
+}
+
+.modal-feedback h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 18px;
+}
+
+.feedback-form input {
+  box-sizing: border-box;
+  min-width: 266px;
+  margin: 0;
+  padding: 8px 14px;
+}
+
+.feedback-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 155px;
+  margin: 0;
+  padding: 8px 14px;
+}
+
+.feedback-form p {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.modal-feedback::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 18px;
+  height: 18px;
+  
+  background-image: url("../img/cross-big.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feedback-button {
+  float: right;
+  padding: 11px 23px;
 }
 
 .inner-page .main-header {
