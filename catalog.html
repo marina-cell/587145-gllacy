@@ -17,8 +17,7 @@
           <ul class="site-navigation">
             <li class="site-navigation-catalog site-navigation-current"><a href="#">Каталог</a>
               <ul class="catalog-navigation">
-                <li class="catalog-navigation-new"><a href="#">Новинки</a></li>
-                <hr noshade color="#d1d0ce" size="1" width="90%">
+                <li class="catalog-navigation-new"><a href="#">Новинки</a><hr></li>
                 <li class="catalog-navigation-current"><a>Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
@@ -40,31 +39,55 @@
                     <input id="search" type="search" name="search" placeholder="Что ищем?">
                   </form>
                 </div>
-              </li>
-              <li class="modal-login">
-                <a class="login-button" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
-                  Вход
-                </a>
-                <div class="modal login-content">
-                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p>
-                      <label class="visually-hidden" for="login-email">Электронная почта</label>
-                      <input id="login-email" type="email" name="login" placeholder="Электронная почта">
-                    </p>
-                    <p>
-                      <label class="visually-hidden" for="login-password">Пароль</label>
-                      <input id="login-password" type="password" name="password" placeholder="Пароль">
-                    </p>
-                    <button class="button login-form-button" type="submit">Войти</button>
-                  </form>
-                  <p class="login-links">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+            </li>
+            <li class="modal-login">
+              <a class="login-button" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+                Вход
+              </a>
+              <div class="modal login-content">
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label class="visually-hidden" for="login-email">Электронная почта</label>
+                    <input id="login-email" type="email" name="login" placeholder="Электронная почта">
                   </p>
-                </div>
-              </li>
-              <li><a class="cart-button full-cart" href="#">2 товара</a></li>
+                  <p>
+                    <label class="visually-hidden" for="login-password">Пароль</label>
+                    <input id="login-password" type="password" name="password" placeholder="Пароль">
+                  </p>
+                  <button class="button login-form-button" type="submit">Войти</button>
+                </form>
+                <p class="login-links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </div>
+            </li>
+            <li class="modal-cart">
+              <a class="cart-button full-cart" href="#">2 товара</a>
+              <div class="modal cart-content">
+                <table class="cart-table">
+                  <tr class="cart-table-item">
+                    <td>
+                      <a class="cart-close-button" href="#"><span class="visually-hidden">Удалить из корзины</span></a>
+                    </td>
+                    <td class="cart-orange">Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг x <span class="price-for-item">200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr class="cart-table-item">
+                    <td>
+                      <a class="cart-close-button" href="#"><span class="visually-hidden">Удалить из корзины</span></a>
+                    </td>
+                    <td class="cart-strawberry">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг x <span class="price-for-item">300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
+                <div class="cart-total-price">Итого: 750 руб.</div>
+                <a class="button cart-content-button" href="#">Оформить заказ</a>
+              </div>
+            </li>
           </ul>
         </nav>
         <div class="row">
@@ -77,29 +100,6 @@
             <p class="schedule">С 10 до 20, ежедневно</p>
             <p class="phone-number"><a href="tel:+78124502525">8 812 450-25-25</a></p>
           </div>
-        </div>
-        <div class="cart-content">
-          <table class="cart-table">
-            <tr class="cart-table-item">
-              <td>
-                <a class="cart-close-button" href="#">Удалить из корзины</a>
-              </td>
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг x <span class="price-for-item">200 руб.</span></td>
-              <td>300 руб.</td>
-            </tr>
-            <tr class="cart-table-item">
-              <td>
-                <a class="cart-close-button" href="#">Удалить из корзины</a>
-              </td>
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг x <span class="price-for-item">300 руб.</span></td>
-              <td>450 руб.</td>
-            </tr>
-          </table>
-          <hr>
-          <b>Итого: 750 руб.</b>
-          <a class="button cart-content-button" href="#">Оформить заказ</a>
         </div>
       </div>
     </header>
