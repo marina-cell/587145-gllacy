@@ -107,9 +107,6 @@
                 <button class="switch-button" type="button">Третий слайд</button>
               </li>
             </ul>
-            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-            <input class="visually-hidden" type="radio" id="product-3" name="toggle">
           </div>
 
           <section class="promos">
@@ -235,14 +232,16 @@
           <h2 class="visually-hidden">Как нас найти</h2>
           <div class="map-wrapper">
             <img src="img/map.png" width="1200" height="430" alt="Наше расположение на карте: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            <address class="contacts">		  
-              <span class="contacts-title">Адрес главного офиса и&nbsp;офлайн-магазина</span>
-              <span class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-              <span class="contacts-title">Для заказов по телефону:</span>
-              <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
-              <span class="contacts-schedule">(с 10 до 20 ежедневно)</span>
-              <a class="button contacts-button" href="#">Форма обратной связи</a>
-            </address>
+            <div class="container">
+              <address class="contacts">		  
+                <span class="contacts-title">Адрес главного офиса и&nbsp;офлайн-магазина</span>
+                <span class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+                <span class="contacts-title">Для заказов по телефону:</span>
+                <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
+                <span class="contacts-schedule">(с 10 до 20 ежедневно)</span>
+                <a class="button contacts-button" href="#">Форма обратной связи</a>
+              </address>
+            </div>
           </div>
         </section>
       </main>
@@ -294,11 +293,15 @@
           </p>
           <p>
             <label class="visually-hidden" for="feedback-message">Ваше сообщение</label>
-            <textarea id="feedback-message" name="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
+            <textarea id="feedback-message" name="message" placeholder="Напишите что-нибудь..."></textarea>
           </p>
           <button class="button feedback-button" type="submit">Отправить</button>
         </form>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </section>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
