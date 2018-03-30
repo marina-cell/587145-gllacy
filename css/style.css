@@ -920,14 +920,14 @@ input[type="radio"].visually-hidden {
 
 .map-wrapper {
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  overflow: hidden;
 }
 
 .contacts {
   width: 252px;
   padding: 30px 25px 40px;
-  margin-top: 30px;
   margin-left: auto;
   
   color: #323232;
