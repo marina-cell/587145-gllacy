@@ -932,8 +932,7 @@ input[type="radio"].visually-hidden {
   z-index: -1;
   
   width: 100%;
-  height: auto;
-  margin: auto;
+  height: 100%;
   
   overflow: hidden;
 }
@@ -944,7 +943,23 @@ input[type="radio"].visually-hidden {
   padding-bottom: 60px;
 }
 
+.map-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  
+  width: 100%;
+  
+  overflow: hidden;  
+  border: none;
+}
+
 .contacts {
+  position: relative;
+  z-index: 5;
   width: 252px;
   padding: 30px 25px 40px;
   margin-left: auto;
@@ -1335,6 +1350,7 @@ input[type="radio"].visually-hidden {
   position: fixed;
   top: 80px;
   left: 360px;
+  z-index: 10;
   
   box-sizing: border-box;
   width: 478px;
