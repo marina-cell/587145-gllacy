@@ -916,13 +916,14 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: auto;
   margin: auto;
+  
+  overflow: hidden;
 }
 
 .map-wrapper {
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
-  overflow: hidden;
 }
 
 .contacts {
