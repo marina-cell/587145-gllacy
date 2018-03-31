@@ -27,13 +27,8 @@ link.addEventListener("click", function (evt) {
       username.value = storage_username;
       if(storage_email) {
         email.value = storage_email;
-        message.focus();
-      } else {
-        email.focus();
       }
-    } else {
-      username.focus();
-    }
+    } 
   });
   
   close.addEventListener("click", function (evt) {
