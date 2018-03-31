@@ -8,6 +8,41 @@ var message = popup.querySelector("[name=message]");
 var background = document.querySelector(".site-wrapper");
 
 var isStorageSupport = true;
+var i;
+var radio_buttons = document.querySelectorAll(".switch-button");
+
+if(radio_buttons) {
+  radio_buttons[0].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    background.classList.remove("slide-2");
+    background.classList.remove("slide-3");
+    background.classList.add("slide-1");
+    radio_buttons[0].classList.add("switch-button-current");
+    radio_buttons[1].classList.remove("switch-button-current");
+    radio_buttons[2].classList.remove("switch-button-current");
+  });
+  
+  radio_buttons[1].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    background.classList.remove("slide-1");
+    background.classList.remove("slide-3");
+    background.classList.add("slide-2");
+    radio_buttons[1].classList.add("switch-button-current");
+    radio_buttons[0].classList.remove("switch-button-current");
+    radio_buttons[2].classList.remove("switch-button-current");
+  });
+  
+  radio_buttons[2].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    background.classList.remove("slide-1");
+    background.classList.remove("slide-2");
+    background.classList.add("slide-3");
+    radio_buttons[2].classList.add("switch-button-current");
+    radio_buttons[0].classList.remove("switch-button-current");
+    radio_buttons[1].classList.remove("switch-button-current");
+  });
+}
+
 
 var storage_username = "";
 var storage_email = "";

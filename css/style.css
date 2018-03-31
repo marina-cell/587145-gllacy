@@ -43,6 +43,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
   background-position: top center;
+  margin: 0 auto;
 }
 
 .slide-1 {
@@ -51,6 +52,10 @@ input[type="radio"].visually-hidden {
 
 .slide-2 {
   background-image: url("../img/slide-2.png");
+}
+
+.slide-3 {
+  background-image: url("../img/slide-3.png");
 }
 
 .container {
