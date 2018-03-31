@@ -31,33 +31,33 @@ link.addEventListener("click", function (evt) {
     } 
   });
   
-  close.addEventListener("click", function (evt) {
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+});
+  
+form.addEventListener("submit", function (evt) {
+  if (!username.value || !email.value || !message.value) {
     evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-  
-  form.addEventListener("submit", function (evt) {
-    if (!username.value || !email.value || !message.value) {
-      evt.preventDefault();
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("username", username.value);
-        localStorage.setItem("email", email.value);
-      }
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("username", username.value);
+      localStorage.setItem("email", email.value);
     }
-  });
+  }
+});
   
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal-show")) {
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
-  });
+  }
+});
 
 if(radio_buttons) {
   radio_buttons[0].addEventListener("click", function (evt) {
