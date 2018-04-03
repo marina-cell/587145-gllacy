@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
@@ -19,8 +19,7 @@
               <li class="site-navigation-catalog"><a href="#">Каталог</a>
                 <div class="menu-dropdown">
                   <ul class="catalog-navigation">
-                    <li class="catalog-navigation-item catalog-navigation-new"><a href="#">Новинки</a>
-                    <hr></li>
+                    <li class="catalog-navigation-item catalog-navigation-new"><a href="#">Новинки</a></li>
                     <li class="catalog-navigation-item"><a href="catalog.html">Сливочное</a></li>
                     <li class="catalog-navigation-item"><a href="#">Щербеты</a></li>
                     <li class="catalog-navigation-item"><a href="#">Фруктовый лед</a></li>
@@ -80,7 +79,6 @@
       <main>
         <div class="container">
           <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
-
           <div class="slider">
             <ul class="slider-list">
               <li class="slider-item" id="slide1">
@@ -108,7 +106,6 @@
               </li>
             </ul>
           </div>
-
           <section class="promos">
             <h2 class="visually-hidden">Предложения</h2>
             <ul class="promos-list">
@@ -128,7 +125,6 @@
               </li>
             </ul>
           </section>
-
           <section class="catalog">
             <h2 class="visually-hidden">Хиты продажи</h2>
             <ul class="catalog-list">
@@ -190,7 +186,6 @@
               </li>
             </ul>
           </section>
-
           <section class="features">
             <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <ul class="features-list">
@@ -208,7 +203,6 @@
               </li>
             </ul>
           </section>
-
           <div class="index-colums">
             <article class="news">
               <h2>Новое в нашем блоге</h2>
@@ -251,16 +245,24 @@
           <div class="footer-social">
             <ul class="social-list">
               <li>
-                <a class="social-button twitter-btn" href="#"><span class="visually-hidden">Твиттер</span></a>
+                <a class="social-button twitter-btn" href="#">
+                  <span class="visually-hidden">Твиттер</span>
+                </a>
               </li>
               <li>
-                <a class="social-button instagram-btn" href="#"><span class="visually-hidden">Инстаграм</span></a>
+                <a class="social-button instagram-btn" href="#">
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
               </li>
               <li>
-                <a class="social-button fb-btn" href="#"><span class="visually-hidden">Фейсбук</span></a>
+                <a class="social-button fb-btn" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
               </li>
               <li>
-                <a class="social-button vk-btn" href="#"><span class="visually-hidden">Вконтакте</span></a>
+                <a class="social-button vk-btn" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -273,14 +275,13 @@
             </ul>
           </div>
           <div class="footer-copyright">
-            <a href="https://htmlacademy.ru">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
             </a>
-            <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+            <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
           </div>
         </div>
       </footer>
-
       <section class="modal modal-feedback">
         <h2>Мы обязательно вам ответим!</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -303,6 +304,6 @@
         </button>
       </section>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

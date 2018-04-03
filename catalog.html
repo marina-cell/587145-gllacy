@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet" >
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <header class="main-header">
@@ -18,7 +18,7 @@
             <li class="site-navigation-catalog site-navigation-current"><a href="#">Каталог</a>
               <div class="menu-dropdown">
                 <ul class="catalog-navigation">
-                  <li class="catalog-navigation-new"><a href="#">Новинки</a><hr></li>
+                  <li class="catalog-navigation-new"><a href="#">Новинки</a></li>
                   <li class="catalog-navigation-current"><a>Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
@@ -34,13 +34,13 @@
               <a class="search-button" href="#">
                 <span class="visually-hidden">Поиск</span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
-                </a>
-                <div class="modal search-content">
-                  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                    <label class="visually-hidden" for="search">Поиск по сайту</label>
-                    <input id="search" type="search" name="search" placeholder="Что ищем?">
-                  </form>
-                </div>
+              </a>
+              <div class="modal search-content">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="search">Поиск по сайту</label>
+                  <input id="search" type="search" name="search" placeholder="Что ищем?">
+                </form>
+              </div>
             </li>
             <li class="modal-login">
               <a class="login-button" href="#">
@@ -108,7 +108,6 @@
     <main>
       <div class="container">
         <h1>Сливочное мороженое</h1>
-
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -182,7 +181,6 @@
             <button class="filter-button" type="submit">Применить</button>
           </form>
         </section>
-
         <section class="catalog">
           <h2 class="visually-hidden">Варианты сливочного мороженого</h2>
           <ul class="catalog-list">
@@ -251,7 +249,7 @@
                   </p>
                 </div>
                 <h3 class="catalog-item-title">
-                  <a href="#">Сливочное с брусничным джемом</a>
+                  <a href="#">Сливочное с&nbsp;брусничным&nbsp; джемом</a>
                 </h3>
                 <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
               </article>
@@ -307,7 +305,7 @@
                   </p>
                 </div>
                 <h3 class="catalog-item-title">
-                  <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+                  <a href="#">Сливочно-ванильное с кусочками&nbsp;шоколада</a>
                 </h3>
                 <a class="button catalog-item-button" href="#">Быстрый просмотр</a>
               </article>
@@ -356,7 +354,6 @@
             </li>
           </ul>
         </section>
-
         <section class="pagination">
           <h2 class="visually-hidden">Постраничная навигация</h2>
           <div class="pagination-wrapper">
@@ -400,10 +397,10 @@
           </ul>
         </div>
         <div class="footer-copyright">
-          <a href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
           </a>
-          <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+          <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
         </div>
       </div>
     </footer>
